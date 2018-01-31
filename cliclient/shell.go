@@ -32,7 +32,7 @@ const (
 )
 
 func showHeader(m *mailproxy.Message) string {
-	return fmt.Sprintf("SenderID %v\nSenderKey %v\nMessageID %s", m.SenderKey.String(), m.MessageID, m.Payload)
+	return fmt.Sprintf("SenderID %v\nSenderKey %v\nMessageID", m.SenderID, m.SenderKey.String(), m.MessageID)
 }
 
 type Shell struct {
